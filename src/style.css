@@ -1,6 +1,10 @@
 :root {
-  --primary-headline: "Shippori Antique", sans-serif;
+  --primary-headline: Arial, Helvetica, sans-serif;
   --secondary-font: Arial, Helvetica, sans-serif;
+}
+.logo {
+  height: 50%;
+  width: 50%;
 }
 
 .grid {
@@ -64,7 +68,7 @@ section.secondary {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url("/images/header-image.jpg");
+    url("../images/header-image.jpeg");
   background-repeat: none;
   background-size: cover;
   color: white;
@@ -124,7 +128,7 @@ main h2 {
 main h3 {
   font-size: 40px;
   line-height: 1.5;
-  margin: 0;
+  margin: 5px 0;
 }
 main h4 {
   margin: 0;
@@ -132,15 +136,26 @@ main h4 {
 }
 main p {
   font-size: 16px;
+  line-height: 1;
+  opacity: 0.7;
+  margin: 0;
+}
+
+main ul {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   opacity: 0.7;
+  margin: 0;
+  padding: 0;
 }
+
 .instagram-embed {
   margin: 30px 0;
 }
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url("/images/footer-image.jpg");
+    url("../images/footer-image.jpeg");
   filter: grayscale(50%);
   background-repeat: none;
   background-size: cover;
