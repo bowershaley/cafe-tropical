@@ -1,0 +1,196 @@
+:root {
+  --primary-headline: "Shippori Antique", sans-serif;
+  --secondary-font: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+.grid-3-columns-1-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns-even {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+.text-center {
+  text-align: center;
+}
+.card {
+  background-color: white;
+  margin: 40px 0 30px 0;
+  box-shadow: 10px 9px 23px -5px rgba(0, 0, 0, 0.26);
+}
+.card h4 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding-top: 15px;
+}
+
+.btn {
+  font-family: var(--secondary-font);
+  display: block;
+  color: white;
+  background-color: black;
+  padding: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+section.secondary {
+  background: #f8f8f8;
+  padding-top: 60px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("/images/header-image.jpg");
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--primary-headline);
+}
+p {
+  font-family: var(--secondary-font);
+}
+
+header h1 {
+  font-size: 96px;
+  margin: 30px 0;
+  line-height: 1;
+}
+
+header h2 {
+  font-size: 60px;
+  margin: 0;
+  line-height: 1.5;
+}
+header h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  margin: 0;
+}
+header a {
+  font-family: var(--primary-headline);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 14px 30px;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  margin-top: 32px;
+}
+
+main h2 {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  opacity: 0.3;
+  margin: 0;
+}
+main h3 {
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+main h4 {
+  margin: 0;
+  line-height: 1.5;
+}
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+.instagram-embed {
+  margin: 30px 0;
+}
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("/images/footer-image.jpg");
+  filter: grayscale(50%);
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+}
+
+footer h3 {
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+footer ul {
+  padding: 0;
+  font-family: var(--secondary-font);
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 18px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+}
